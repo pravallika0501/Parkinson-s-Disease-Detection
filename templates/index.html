@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parkinson's Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Parkinson's Disease Prediction</h2>
+        <form method="POST" action="/predict">
+            <input type="text" name="MDVP:Fo(Hz)" placeholder="MDVP:Fo(Hz)" required>
+            <input type="text" name="MDVP:Jitter(%)" placeholder="MDVP:Jitter(%)" required>
+            <input type="text" name="MDVP:RAP" placeholder="MDVP:RAP" required>
+            <input type="text" name="MDVP:Shimmer" placeholder="MDVP:Shimmer" required>
+            <input type="text" name="NHR" placeholder="NHR" required>
+            <input type="text" name="HNR" placeholder="HNR" required>
+            <input type="text" name="RPDE" placeholder="RPDE" required>
+            <input type="text" name="DFA" placeholder="DFA" required>
+            <input type="submit" value="Predict">
+        </form>
+        {% if prediction_text %}
+        <h3>Prediction Result: {{ prediction_text }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
