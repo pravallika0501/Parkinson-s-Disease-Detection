@@ -45,8 +45,8 @@ The model is trained on the following 8 features:
 
 
 ## ✨ How It Works
-User fills in the 8 parameters in the web form.
-The values are scaled using the pre-fitted StandardScaler.
-The scaled features are passed to the Random Forest Classifier model.
-The model returns whether the person is likely or unlikely to have Parkinson’s disease.
+- User fills in the 8 parameters in the web form.
+- The values are scaled using the pre-fitted StandardScaler.
+- The scaled features are passed to the Random Forest Classifier model.
+- The model returns whether the person is likely or unlikely to have Parkinson’s disease.
 
