@@ -43,6 +43,7 @@ The model is trained on the following 8 features:
 - RPDE
 - DFA
 
+---
 
 ## ✨ How It Works
 - User fills in the 8 parameters in the web form.
